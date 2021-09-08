@@ -1,17 +1,36 @@
+import random
+
+enforcou = False
+
+acertou = False
+
+erros = 0
+
+tentativas = 5
+
+palavras = ['banana', 'melancia', 'morango', 'manga', 'abacaxi', 'uva', 'tomate', 'limao']
+
+numero = random.randrange(0, len(palavras))
+
+palavra_secreta = palavras[numero].upper()
+
+letras_acertadas = ['_' for letra in palavra_secreta]
+
 print('*********************************')
 print('***Bem vindo ao jogo da Forca!***')
 print('*********************************')
 
-palavra_secreta = 'banana'
-letras_acertadas = ['_', '_', '_', '_', '_', '_']
+print('\nVocê tem direito a errar {} vezes. A dica é: FRUTA'.format(tentativas))
 
-enforcou = False
-acertou = False
-erros = 0
+
+
+print('\n', letras_acertadas)
+
+
 
 while not acertou and not enforcou:
     
-    chute = input('Qual a letra? ')
+    chute = input('\nDigite uma letra? ').upper()
 
     if chute in palavra_secreta:
         posicao = 0
@@ -21,13 +40,14 @@ while not acertou and not enforcou:
             posicao += 1
     else:
         erros += 1
+        print('\nErrou! Você ainda tem ', tentativas - erros, ' tentativas.' )
 
-    enforcou = erros == 6
+    enforcou = erros == 5
     acertou = '_' not in letras_acertadas
-    print(letras_acertadas)
+    print('\n', letras_acertadas)
 
 if acertou:
     print('Você ganhou!')
 else:
     print('Você perdeu!')
-print('Fim do jogo.')
+print('\nFim do jogo.')
