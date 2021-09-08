@@ -50,5 +50,5 @@ while not acertou and not enforcou:
 if acertou:
     print('Você ganhou!')
 else:
-    print('Você perdeu!')
+    print('Você perdeu! A palavra secreta era {}'.format(palavra_secreta))
 print('\nFim do jogo.')
