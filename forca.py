@@ -1,5 +1,7 @@
 import random
 
+###### Variáveis do jogo ######
+
 enforcou = False
 
 acertou = False
@@ -16,16 +18,15 @@ palavra_secreta = palavras[numero].upper()
 
 letras_acertadas = ['_' for letra in palavra_secreta]
 
+###### Jogo ######
+
 print('*********************************')
 print('***Bem vindo ao jogo da Forca!***')
 print('*********************************')
 
 print('\nVocê tem direito a errar {} vezes. A dica é: FRUTA'.format(tentativas))
 
-
-
 print('\n', letras_acertadas)
-
 
 
 while not acertou and not enforcou:
