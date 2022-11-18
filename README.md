@@ -1,2 +1,2 @@
-# exerciciosPython
-Códigos que produzo resolvendo exercícios de Python
+# Exercícios de Python
+Códigos desenvolvidos para resolver exercícios de Python.
