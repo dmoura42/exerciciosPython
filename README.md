@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="python-logo.png" alt="Python" title="Python" style="vertical-align:top; margin:6px 4px;" width="30%">
+</p><br />
+
 # Exercícios de Python
 
 - Códigos desenvolvidos para resolver exercícios de Python.
