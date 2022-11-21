@@ -75,4 +75,4 @@ Esse projeto está sob a licença :balance_scale: MIT License. Veja o arquivo [L
 
 ---
 
-Desenvolvido por: :copyright: Daniel Moura :woman_technologist: :purple_heart:
+Desenvolvido por: :copyright: Daniel Moura :man_technologist: :blue_heart:
